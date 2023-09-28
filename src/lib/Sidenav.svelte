@@ -34,7 +34,7 @@
 	<NavBrand href="/">
 		<span
 			class="self-center whitespace-nowrap text-xl font-semibold
-      dark:text-white">Galih's Portfolio!</span
+      dark:text-white">Galih's Profile!</span
 		>
 	</NavBrand>
 	<NavHamburger on:click={() => (hidden1 = false)} />
