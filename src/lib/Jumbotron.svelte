@@ -4,7 +4,7 @@
 	import { Card, Avatar } from 'flowbite-svelte';
 </script>
 
-<section class="flex items-center content-around mt-8 mb-6 flex-wrap text-slate-900">
+<section class="flex justify-center content-around mt-8 mb-6 flex-wrap text-slate-900">
 	<Card padding="xl" size="xl">
 		<div class="p-6 px-20 flex flex-col items-center">
 			<Avatar size="xl" src={profileImg} />
