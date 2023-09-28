@@ -23,7 +23,9 @@
 			</a>
 		</div>
 	</Card>
+</section>
 
+<section class="flex justify-center content-around mt-8 mb-6 flex-wrap text-slate-900">
 	<div class="mt-8 md:w-2/3">
 		<h3 class="mb-4 text-center text-3xl font-bold">About Me!</h3>
 
