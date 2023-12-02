@@ -1,5 +1,5 @@
 <script>
-	import { Input, Label, Textarea, Button, Alert } from 'flowbite-svelte';
+	import { Input, Label, Textarea, Button, Alert, Spinner } from 'flowbite-svelte';
 	const dataForm = {
 		nama: '',
 		email: '',
@@ -11,6 +11,8 @@
 	// 0 = Netral (belum disubmit)
 	// 1 = Berhasil
 	// 2 = Memproses
+	
+	let error = ''
 
 	const handleSubmit = async (e) => {
 		success = 2;
@@ -33,8 +35,9 @@
 			);
 			const res = await req.json();
 			success = res.ok ? 1 : -1;
-		} catch {
+		} catch(e) {
 			success = -1;
+			error = e
 		}
 
 		if (success == 1) e.target.reset();
@@ -52,6 +55,9 @@
 			{#if success != 2}
 				<span class="font-bold">{success == 1 ? 'Berhasil' : success == -1 ? 'Gagal' : ''}</span> mengirimkan
 				pesan.
+				{#if error != ''}
+				<br><span class="font-bold">Error: </span>{error}
+				{/if}
 			{:else}
 				Sedang mencoba untuk mengirimkan pesan...
 			{/if}
@@ -75,5 +81,13 @@
 		<Label for="textarea-id" class="mb-2">Pesan</Label>
 		<Textarea id="textarea-id" placeholder="Pesan" rows="4" required bind:value={dataForm.pesan} />
 	</div>
+	{#if success == 2 }
+	<Button color="blue" disabled><Spinner class="mr-2" size="4" color="white" />Kirim</Button>
+	{:else if success == 1}
+	<Button color="blue" disabled><i class="bi bi-check-circle mr-2"></i>Kirim</Button>
+	{:else if success == -1}
+	<Button color="blue" disabled><i class="bi bi-exclamation-circle mr-2"></i>Kirim</Button>
+	{:else}
 	<Button color="blue" type="submit"><i class="bi bi-send mr-2"></i>Kirim</Button>
+	{/if}
 </form>
