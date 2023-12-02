@@ -55,7 +55,7 @@
 			{#if success != 2}
 				<span class="font-bold">{success == 1 ? 'Berhasil' : success == -1 ? 'Gagal' : ''}</span> mengirimkan
 				pesan.
-				{#if error != ''}
+				{#if success == -1 && error != ''}
 				<br><span class="font-bold">Error: </span>{error}
 				{/if}
 			{:else}
@@ -84,9 +84,9 @@
 	{#if success == 2 }
 	<Button color="blue" disabled><Spinner class="mr-2" size="4" color="white" />Kirim</Button>
 	{:else if success == 1}
-	<Button color="blue" disabled><i class="bi bi-check-circle mr-2"></i>Kirim</Button>
+	<Button color="green" disabled><i class="bi bi-check-circle mr-2"></i>Kirim</Button>
 	{:else if success == -1}
-	<Button color="blue" disabled><i class="bi bi-exclamation-circle mr-2"></i>Kirim</Button>
+	<Button color="red" disabled><i class="bi bi-exclamation-circle mr-2"></i>Kirim</Button>
 	{:else}
 	<Button color="blue" type="submit"><i class="bi bi-send mr-2"></i>Kirim</Button>
 	{/if}
