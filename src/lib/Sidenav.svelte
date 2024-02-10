@@ -25,7 +25,7 @@
     { label: 'Profil Saya', href: '/' },
     { label: 'Portfolio', href: '/portfolio' },
     { label: 'Contact', href: '/contact' },
-    { label: 'Tes Counter', href: '/counter' },
+    // { label: 'Tes Counter', href: '/counter' },
     { label: 'Changelog', href: '/changelog' }
   ];
 </script>

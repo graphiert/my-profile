@@ -5,7 +5,7 @@
 
   import Sidenav from './lib/Sidenav.svelte';
   import Hero from './lib/Jumbotron.svelte';
-  import Counter from './lib/Counter.svelte';
+  // import Counter from './lib/Counter.svelte';
   import Changelog from './lib/Changelog.svelte';
   import Portfolio from './lib/Portfolio.svelte';
   import AnimeSearcher from './lib/portfolio/anime-searcher.svelte';
@@ -18,7 +18,7 @@
   <Sidenav />
   <main class="relative px-8 pt-[72px]">
     <Route path="/" component={Hero} primary={false} />
-    <Route path="/counter" component={Counter} primary={false} />
+    <!-- <Route path="/counter" component={Counter} primary={false} /> -->
     <Route path="/changelog" component={Changelog} primary={false} />
     <Route path="/portfolio" component={Portfolio} primary={false} />
     <Route path="/portfolio/anime-searcher" component={AnimeSearcher} primary={false} />
