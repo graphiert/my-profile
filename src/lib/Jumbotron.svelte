@@ -40,11 +40,10 @@
       <p>
         Kalo ditanya tentang hobi sih sebenernya bisa macem-macem. Bisa tergantung berdasarkan emang
         lagi tertarik sama sesuatu, kadang juga suka nulis-nulis gak jelas juga di blog ini (masih
-        rencana, tapi semoga). Ada lah dikit-dikit suka cosplay tapi kan ya kadang bisa juga agak
-        males, tergantung mood juga tergantung isi dompet hehe. Suka ngoding juga biar tau ada apa
+        rencana, tapi semoga). Suka ngoding juga biar tau ada apa
         aja yang lagi rame lah, juga biar dianggap paling keren satu kelas. Walau emang ada
         pelajaran informatika di kelasku, tapi rata-rata temenku kalo susah ya konsultasinya ke aku,
-        bukan ke guru. Kan kesannya malah aneh ya, cosplay guru juga mungkin? Wow siapa sangka
+        bukan ke guru. Kan kesannya aneh ya, siapa sangka
         wkwkwk.
       </p>
     </div>

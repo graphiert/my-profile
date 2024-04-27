@@ -6,7 +6,11 @@ export default {
     './node_modules/flowbite-svelte/**/*.{html,js,svelte,ts}'
   ],
   theme: {
-    extend: {}
+    extend: {
+      fontFamily: {
+        'helvetica': 'Helvetica, sans-serif'
+      }
+    }
   },
   plugins: [require('flowbite/plugin')]
 };

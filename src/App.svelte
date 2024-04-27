@@ -16,7 +16,7 @@
 
 <Router>
   <Sidenav />
-  <main class="relative px-8 pt-[72px]">
+  <main class="relative px-8 pt-[72px] font-helvetica">
     <Route path="/" component={Hero} primary={false} />
     <!-- <Route path="/counter" component={Counter} primary={false} /> -->
     <Route path="/changelog" component={Changelog} primary={false} />

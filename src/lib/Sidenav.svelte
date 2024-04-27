@@ -30,7 +30,7 @@
   ];
 </script>
 
-<Navbar navClass="px-2 px-4 py-2.5 mb-2 fixed w-full z-20 top-0 left-0 border-b">
+<Navbar navClass="px-2 px-4 py-2.5 mb-2 fixed w-full z-20 top-0 left-0 border-b font-helvetica">
   <NavBrand href="/">
     <span
       class="self-center whitespace-nowrap text-xl font-semibold
@@ -51,6 +51,7 @@
   {transitionParams}
   bind:hidden={hidden1}
   id="sidebar1"
+  class="font-helvetica"
 >
   <div class="flex items-center">
     <CloseButton on:click={() => (hidden1 = true)} class="mb-4" />
