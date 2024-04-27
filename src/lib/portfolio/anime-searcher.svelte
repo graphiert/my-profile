@@ -28,7 +28,7 @@
     status = datas.length == 0 ? -1 : 1;
     if (status == -1) {
       setTimeout(async () => {
-        const req = await fetch('https://api.jikan.moe/v4/anime');
+        const req = await fetch('https://api.jikan.moe/v4/top/anime');
         const res = await req.json();
         datas = res.data;
         status = 1;
